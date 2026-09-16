@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///home/system/workspace/todo/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./index_files/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <main class="todo-app">
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">Daily Planner</p>
+            <h1>To-Do List</h1>
+          </div>
+          <div class="task-summary">
+            <span id="tasksRemaining">0 tasks left</span>
+          </div>
+        </header>
+
+        <form id="todoForm" class="todo-form">
+          <label class="sr-only" for="todoInput">Add a task</label>
+          <input id="todoInput" type="text" maxlength="200" placeholder="Add a new task..." autocomplete="off">
+          <button type="submit">Add Task</button>
+        </form>
+
+        <section class="toolbar" aria-label="Task list actions">
+          <button type="button" id="clearCompleted" class="secondary-button">
+            Clear completed
+          </button>
+        </section>
+
+        <ul id="taskList" class="task-list" aria-live="polite"><li class="task-item completed">
+        <label class="task-check">
+          <input type="checkbox" class="task-toggle">
+          <span class="checkmark" aria-hidden="true"></span>
+        </label>
+
+        <div class="task-content">
+          <span class="task-text">c</span>
+        </div>
+
+        <div class="task-actions">
+          <button type="button" class="edit-button" aria-label="Edit task">Edit</button>
+          <button type="button" class="delete-button" aria-label="Delete task">Delete</button>
+        </div>
+      </li><li class="task-item completed">
+        <label class="task-check">
+          <input type="checkbox" class="task-toggle">
+          <span class="checkmark" aria-hidden="true"></span>
+        </label>
+
+        <div class="task-content">
+          <span class="task-text">python</span>
+        </div>
+
+        <div class="task-actions">
+          <button type="button" class="edit-button" aria-label="Edit task">Edit</button>
+          <button type="button" class="delete-button" aria-label="Delete task">Delete</button>
+        </div>
+      </li></ul>
+      </main>
+    </div>
+
+    <template id="task-template"></template>
+
+    <script src="./index_files/script.js"></script>
+  
+
+</body></html>
